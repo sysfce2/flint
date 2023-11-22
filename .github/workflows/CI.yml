@@ -64,6 +64,7 @@ jobs:
       - name: "Check"
         run: |
           $MAKE check
+          $MAKE check PYTHON=1
 
       - name: "Gather coverage data"
         run: dev/gather_coverage.sh
